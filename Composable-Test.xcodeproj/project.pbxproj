@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		036475BF2488B72200CBC750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036475BE2488B72200CBC750 /* AppDelegate.swift */; };
+		036475C12488B72200CBC750 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036475C02488B72200CBC750 /* SceneDelegate.swift */; };
+		036475C32488B72200CBC750 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036475C22488B72200CBC750 /* ListView.swift */; };
+		036475C52488B72500CBC750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036475C42488B72500CBC750 /* Assets.xcassets */; };
+		036475C82488B72500CBC750 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036475C72488B72500CBC750 /* Preview Assets.xcassets */; };
+		036475CB2488B72500CBC750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036475C92488B72500CBC750 /* LaunchScreen.storyboard */; };
+		036475D42488B74100CBC750 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 036475D32488B74100CBC750 /* ComposableArchitecture */; };
+		036475D9248C2B9800CBC750 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036475D8248C2B9800CBC750 /* DetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		036475BB2488B72200CBC750 /* Composable-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Composable-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		036475BE2488B72200CBC750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		036475C02488B72200CBC750 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		036475C22488B72200CBC750 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		036475C42488B72500CBC750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		036475C72488B72500CBC750 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		036475CA2488B72500CBC750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		036475CC2488B72500CBC750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		036475D7248B680800CBC750 /* Composable-Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Composable-Test.entitlements"; sourceTree = "<group>"; };
+		036475D8248C2B9800CBC750 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		036475B82488B72200CBC750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036475D42488B74100CBC750 /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		036475B22488B72200CBC750 = {
+			isa = PBXGroup;
+			children = (
+				036475BD2488B72200CBC750 /* Composable-Test */,
+				036475BC2488B72200CBC750 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		036475BC2488B72200CBC750 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				036475BB2488B72200CBC750 /* Composable-Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		036475BD2488B72200CBC750 /* Composable-Test */ = {
+			isa = PBXGroup;
+			children = (
+				036475D7248B680800CBC750 /* Composable-Test.entitlements */,
+				036475BE2488B72200CBC750 /* AppDelegate.swift */,
+				036475C02488B72200CBC750 /* SceneDelegate.swift */,
+				036475C22488B72200CBC750 /* ListView.swift */,
+				036475D8248C2B9800CBC750 /* DetailView.swift */,
+				036475C42488B72500CBC750 /* Assets.xcassets */,
+				036475C92488B72500CBC750 /* LaunchScreen.storyboard */,
+				036475CC2488B72500CBC750 /* Info.plist */,
+				036475C62488B72500CBC750 /* Preview Content */,
+			);
+			path = "Composable-Test";
+			sourceTree = "<group>";
+		};
+		036475C62488B72500CBC750 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				036475C72488B72500CBC750 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		036475BA2488B72200CBC750 /* Composable-Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 036475CF2488B72500CBC750 /* Build configuration list for PBXNativeTarget "Composable-Test" */;
+			buildPhases = (
+				036475B72488B72200CBC750 /* Sources */,
+				036475B82488B72200CBC750 /* Frameworks */,
+				036475B92488B72200CBC750 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Composable-Test";
+			packageProductDependencies = (
+				036475D32488B74100CBC750 /* ComposableArchitecture */,
+			);
+			productName = "Composable-Test";
+			productReference = 036475BB2488B72200CBC750 /* Composable-Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		036475B32488B72200CBC750 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = com.josh;
+				TargetAttributes = {
+					036475BA2488B72200CBC750 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 036475B62488B72200CBC750 /* Build configuration list for PBXProject "Composable-Test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 036475B22488B72200CBC750;
+			packageReferences = (
+				036475D22488B74100CBC750 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 036475BC2488B72200CBC750 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				036475BA2488B72200CBC750 /* Composable-Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		036475B92488B72200CBC750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036475CB2488B72500CBC750 /* LaunchScreen.storyboard in Resources */,
+				036475C82488B72500CBC750 /* Preview Assets.xcassets in Resources */,
+				036475C52488B72500CBC750 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		036475B72488B72200CBC750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036475BF2488B72200CBC750 /* AppDelegate.swift in Sources */,
+				036475D9248C2B9800CBC750 /* DetailView.swift in Sources */,
+				036475C12488B72200CBC750 /* SceneDelegate.swift in Sources */,
+				036475C32488B72200CBC750 /* ListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		036475C92488B72500CBC750 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				036475CA2488B72500CBC750 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		036475CD2488B72500CBC750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		036475CE2488B72500CBC750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		036475D02488B72500CBC750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Composable-Test/Composable-Test.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Composable-Test/Preview Content\"";
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Composable-Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "josh.Composable-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		036475D12488B72500CBC750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Composable-Test/Composable-Test.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Composable-Test/Preview Content\"";
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Composable-Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "josh.Composable-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		036475B62488B72200CBC750 /* Build configuration list for PBXProject "Composable-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036475CD2488B72500CBC750 /* Debug */,
+				036475CE2488B72500CBC750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		036475CF2488B72500CBC750 /* Build configuration list for PBXNativeTarget "Composable-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036475D02488B72500CBC750 /* Debug */,
+				036475D12488B72500CBC750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		036475D22488B74100CBC750 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		036475D32488B74100CBC750 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 036475D22488B74100CBC750 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 036475B32488B72200CBC750 /* Project object */;
+}
